@@ -41,7 +41,7 @@ train_data = pd.read_csv(r"D:\Internship_test\data\train.csv", header=None)
 # Drop rows with NaN values
 train_data = train_data.dropna()
 
-# Apply text preprocessing to the 'text' column
+# Apply text preprocessing to the text
 train_data[0] = train_data[0].apply(preprocess_text)
 
 # Tokenize the text
